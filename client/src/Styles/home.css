@@ -1,0 +1,124 @@
+
+html , body{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    
+}
+
+.nav-div ul {
+  list-style: none;
+  display: flex;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.nav-div li{
+    display: inline-block;
+    margin: 5px 5px;
+     gap:150px;
+     padding-top: 40px;
+     padding-right:20px;
+     padding-left: 20px;
+     padding-bottom: 30px;
+     
+
+}
+.navl{
+    text-decoration: none;
+}
+
+.nav-div li:hover{
+    background-color: rgb(22, 83, 214);
+    
+}
+.navl:hover{
+    color:white;
+    background-color: rgb(22, 83, 214);
+}
+
+
+
+.nav-div button{
+   padding: 10px ;
+   margin-right:5px;
+   border-radius: 10px;
+     background-color: rgb(22, 83, 214);
+     border:none;
+     color:white;
+}
+.car-container-home{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    flex-wrap: wrap;
+    padding:20px;
+}
+.card-home{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    width:250px;
+    height: 350px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transfrom 0.2s ease, box-shadow 0.2s ease ;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card-home:hover{
+    transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+}
+.card-home img{
+    width:100%;
+    height: 250px;
+    object-fit: contain;
+  
+}
+
+.card-home span{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.card-home span:first-of-type{
+     font-weight: 600;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.card-home span:last-of-type{
+    position: absolute;
+    color: #2a9d8f;
+    font-weight: bold;
+    font-size: 15px;
+    bottom : 35px;
+    left : 47%;
+    transform: translateX(-60%);
+}
+.card-home button{
+    position: absolute;
+     bottom : 10px;
+     left : 50%;
+    transform: translateX(-50%);
+    background-color: rgb(22, 83, 214);
+    border:none;
+    color:white;
+    border-radius: 5px;
+}
+
+.card-home button:hover{
+    background-color: red;
+}

@@ -1,0 +1,74 @@
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 220px;
+    height:300px;
+    background-color: #fff;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f8f8f8; /* optional: gives a nice contrast if image doesn't fill area */
+}
+
+.card span {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.card span:first-of-type {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.card span:last-of-type {
+    position: absolute;
+    color: #2a9d8f;
+    font-weight: bold;
+    font-size: 15px;
+    bottom : 35px;
+    left : 45%;
+    transform: translateX(-60%);
+}
+
+.card button{
+    position: absolute;
+    bottom: 8px;
+    left : 40%;
+    border-radius: 8px;
+    background-color: rgb(12, 78, 245);
+    border:none;
+    color: white;
+    padding: 4px 8px;
+    
+}
+
+.card button:hover{
+  background-color: red ;
+  cursor: pointer;
+}
